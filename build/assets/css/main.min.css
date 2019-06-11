@@ -179,3 +179,155 @@ table {
 td,
 th {
   padding: 0; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #f9f9f9; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.btn-unique, .btn-unique-reverse, .btn-unique-white {
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.1rem;
+  height: 40px;
+  background: #BCE050;
+  line-height: 40px !important;
+  padding: 0 20px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  position: relative;
+  border: none;
+  text-decoration: none !important;
+  border-radius: 0 !important; }
+
+.btn-unique::before, .btn-unique-reverse::before, .btn-unique-white::before {
+  content: '';
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border: 1px solid #f9f9f9;
+  position: absolute;
+  display: block;
+  left: 1px;
+  top: 1px;
+  text-decoration: none !important; }
+
+.btn-unique:hover, .btn-unique-reverse:hover, .btn-unique-white:hover, .btn-unique:focus, .btn-unique-reverse:focus, .btn-unique-white:focus {
+  background: #000;
+  color: #fff; }
+
+.btn-unique-reverse {
+  background: #000;
+  background: #fff; }
+
+.btn-unique-white {
+  color: #BCE050;
+  background: #fff; }
+
+.btn-unique-white::before {
+  border-color: #BCE050; }
+
+.btn-unique-white:hover, .btn-unique-white:focus {
+  background: #000;
+  border: none;
+  color: #fff; }
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 7.25rem;
+  text-align: center;
+  padding: 12px 0 6px 0;
+  margin: 0;
+  width: 500px; }
+
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem; }
+
+h3 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.8rem;
+  margin: 0; }
+
+/* h4 is for featured highlights TO BE REVIEWED */
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 16rem;
+  color: #BCE050;
+  letter-spacing: -10px; }
+
+/* h5 is the largest but is only use for the feature letter in header sections */
+h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 38rem;
+  text-align: center;
+  margin-top: -200px;
+  margin: 0; }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #515151;
+  line-height: 1.4rem;
+  margin: 0; }
+
+.header__feature-letter {
+  color: #BCE050;
+  margin-top: -100px;
+  margin-left: -50px; }
+
+.header__wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; }
+
+.header__flex-container {
+  display: flex;
+  flex-wrap: nowrap; }
+
+.header__flex-container--top {
+  position: relative;
+  top: -520px;
+  margin-bottom: -520px; }
+
+.header__flex-container-box {
+  width: 250px;
+  margin: 0px;
+  text-align: center;
+  padding: 25px 5px;
+  border-bottom: double #000 9px;
+  border-top: solid #000 3px;
+  letter-spacing: 0.03em; }
+
+.header__flex-container-box--left {
+  text-align: left;
+  border-left: solid #000 3px;
+  border-bottom: solid #000 3px;
+  border-top: none;
+  padding: 0 5px 5px 5px; }
+
+.header__flex-container-box--right {
+  text-align: right;
+  border-bottom: solid #000 3px;
+  border-top: none;
+  padding: 0 2px 5px 5px; }
+
+.header__h3--l-border {
+  border-left: solid #000 3px; }
+
+.header__text {
+  padding-top: 35px; }
+
+.header__icon {
+  color: #BCE050;
+  margin: 25px 218px 60px 218px; }
