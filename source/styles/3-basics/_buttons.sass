@@ -1,25 +1,65 @@
 // CUSTOM BUTTONS
 
-.btn-unique, .btn-unique-reverse, .btn-unique-white
+.btn-unique
   color: #fff
   font-family: 'Fjalla One', sans-serif
-  font-size: 1.1rem
-  height: 40px
-  background: #BCE050
-  line-height: 40px !important
+  font-size: 1.3rem
+  height: 45px
+  background: $mainColor
+  line-height: 45px !important
   padding: 0 20px !important
   text-transform: uppercase
-  letter-spacing: 0.10em
+  letter-spacing: 0.03em
   position: relative
   border: none
   text-decoration: none !important
   border-radius: 0 !important
 
+.btn-unique-reverse
+  color: #fff
+  font-family: 'Fjalla One', sans-serif
+  font-size: 1.3rem
+  height: 45px
+  background: $mainColor
+  line-height: 45px !important
+  padding: 0 20px !important
+  text-transform: uppercase
+  letter-spacing: 0.03em
+  position: relative
+  border: none
+  text-decoration: none !important
+  border-radius: 0 !important
 
-.btn-unique::before, .btn-unique-reverse::before, .btn-unique-white::before
+.btn-unique-white
+  color: #fff
+  font-family: 'Fjalla One', sans-serif
+  font-size: 1.3rem
+  height: 45px
+  background: $mainColor
+  line-height: 45px !important
+  padding: 0 20px !important
+  text-transform: uppercase
+  letter-spacing: 0.03em
+  position: relative
+  border: none
+  text-decoration: none !important
+  border-radius: 0 !important
+
+.btn-unique::before
   content: ''
-  width: calc(100% - 2px)
-  height: calc(100% - 2px)
+  width: calc(100% - 4px)
+  height: calc(100% - 4px)
+  border: 1px solid #f9f9f9
+  position: absolute
+  display: block
+  left: 2px
+  top: 2px
+  text-decoration: none !important
+
+.btn-unique-reverse::before
+  content: ''
+  width: calc(100% - 4px)
+  height: calc(100% - 4px)
   border: 1px solid #f9f9f9
   position: absolute
   display: block
@@ -27,27 +67,58 @@
   top: 1px
   text-decoration: none !important
 
+.btn-unique-white::before
+    content: ''
+    width: calc(100% - 4px)
+    height: calc(100% - 4px)
+    border: 1px solid #f9f9f9
+    position: absolute
+    display: block
+    left: 1px
+    top: 1px
+    text-decoration: none !important
 
-.btn-unique:hover, .btn-unique-reverse:hover, .btn-unique-white:hover, .btn-unique:focus, .btn-unique-reverse:focus, .btn-unique-white:focus
+.btn-unique:hover
   background: #000
   color: #fff
 
+.btn-unique-reverse:hover
+  background: #000
+  color: #fff
+
+.btn-unique-white:hover
+  background: #000
+  color: #fff
+
+.btn-unique:focus
+  background: #000
+  color: #fff
+
+.btn-unique-reverse:focus
+  background: #000
+  color: #fff
+
+.btn-unique-white:focus
+  background: #000
+  color: #fff
 
 .btn-unique-reverse
   background: #000
   background: #fff
 
-
 .btn-unique-white
-  color: #BCE050
+  color: $mainColor
   background: #fff
 
-
 .btn-unique-white::before
-  border-color: #BCE050
+  border-color: $mainColor
 
+.btn-unique-white:hover
+  background: #000
+  border: none
+  color: #fff
 
-.btn-unique-white:hover, .btn-unique-white:focus
+.btn-unique-white:focus
   background: #000
   border: none
   color: #fff
