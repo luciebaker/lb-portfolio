@@ -189,7 +189,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #f9f9f9;
+  background: #fdfdfd;
   margin: 0;
   padding: 0; }
 
@@ -199,13 +199,13 @@ body {
   margin: 0 auto; }
 
 .btn-unique {
-  color: #fff;
+  color: #000;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3rem;
   height: 45px;
-  background: #BCE050;
+  background: #ffc600;
   line-height: 45px !important;
-  padding: 0 20px !important;
+  padding: 0 25px !important;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   position: relative;
@@ -214,13 +214,13 @@ body {
   border-radius: 0 !important; }
 
 .btn-unique-reverse {
-  color: #fff;
+  color: #000;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3rem;
   height: 45px;
-  background: #BCE050;
+  background: #ffc600;
   line-height: 45px !important;
-  padding: 0 20px !important;
+  padding: 0 25px !important;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   position: relative;
@@ -229,13 +229,13 @@ body {
   border-radius: 0 !important; }
 
 .btn-unique-white {
-  color: #fff;
+  color: #000;
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.3rem;
   height: 45px;
-  background: #BCE050;
+  background: #ffc600;
   line-height: 45px !important;
-  padding: 0 20px !important;
+  padding: 0 25px !important;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   position: relative;
@@ -247,7 +247,7 @@ body {
   content: '';
   width: calc(100% - 4px);
   height: calc(100% - 4px);
-  border: 1px solid #f9f9f9;
+  border: 1px solid #fdfdfd;
   position: absolute;
   display: block;
   left: 2px;
@@ -258,7 +258,7 @@ body {
   content: '';
   width: calc(100% - 4px);
   height: calc(100% - 4px);
-  border: 1px solid #f9f9f9;
+  border: 1px solid #fdfdfd;
   position: absolute;
   display: block;
   left: 1px;
@@ -269,7 +269,7 @@ body {
   content: '';
   width: calc(100% - 4px);
   height: calc(100% - 4px);
-  border: 1px solid #f9f9f9;
+  border: 1px solid #fdfdfd;
   position: absolute;
   display: block;
   left: 1px;
@@ -305,14 +305,14 @@ body {
   background: #fff; }
 
 .btn-unique-white {
-  color: #BCE050;
+  color: #ffc600;
   background: #fff; }
 
 .btn-unique-white::before {
-  border-color: #BCE050; }
+  border-color: #ffc600; }
 
 .btn-unique-white:hover {
-  background: #000;
+  background: #ffc600;
   border: none;
   color: #fff; }
 
@@ -323,13 +323,12 @@ body {
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
-  font-weight: 500;
   text-transform: uppercase;
   font-size: 7.25rem;
   text-align: center;
   padding: 12px 0 6px 0;
   margin: 0;
-  width: 500px; }
+  width: 700px; }
 
 h2 {
   font-family: 'Fjalla One', sans-serif;
@@ -341,18 +340,19 @@ h3 {
   font-size: 1.8rem;
   margin: 0; }
 
-/* h4 is for featured highlights TO BE REVIEWED */
+/* h4 is for featured letter in top section only TO BE REVIEWED*/
 h4 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 16rem;
-  color: #BCE050;
+  color: #ffc600;
   letter-spacing: -10px; }
 
-/* h5 is the largest but is only use for the feature letter in header sections */
+/* h5 is the largest letter but is only use for the feature letter in top of page sections */
 h5 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #ffc600;
   font-size: 38rem;
   text-align: center;
   margin-top: -200px;
@@ -360,9 +360,16 @@ h5 {
 
 p {
   font-family: 'Raleway', sans-serif;
-  color: #515151;
+  color: #000;
   line-height: 1.4rem;
   margin: 0; }
+
+li {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  line-height: 1.4rem;
+  margin: 0;
+  padding-bottom: 10px; }
 
 .nav__main {
   display: flex;
@@ -383,9 +390,12 @@ p {
     padding: 10px 30px;
     text-decoration: none; }
   .nav__main a:hover {
-    border-top: solid 3px #BCE050; }
-  .nav__main a.nav__logo:hover {
+    border-top: solid 3px #ffc600; }
+  .nav__main a.nav__brand:hover {
     border-top: none; }
+
+a.nav__brand {
+  padding: 5px 0 0 0; }
 
 .btn-unique-logo {
   color: #000;
@@ -396,9 +406,15 @@ p {
   letter-spacing: 0.01em;
   margin-top: -10px; }
 
+#header {
+  margin-top: 100px; }
+
 .header__feature-letter {
-  color: #BCE050;
-  margin-top: -180px; }
+  color: #ffc600;
+  margin-top: -110px; }
+
+.header__feature-letter-homepage {
+  margin-top: -130px; }
 
 .header__wrapper {
   width: 100%;
@@ -448,14 +464,13 @@ p {
   margin-right: 50%; }
 
 .header__text {
-  padding-top: 50px;
+  padding-top: 80px;
   text-align: center; }
 
 .header__wrapper--portfolio-page {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden; }
+  margin: 80px auto 0 auto; }
 
 .header__flex-container--top-portfolio-page {
   position: relative;
@@ -499,7 +514,56 @@ p {
   border-top: solid #000 3px; }
 
 .header__text-portfolio-page {
-  padding-top: 60px;
+  padding-top: 90px;
   max-width: 650px;
   text-align: center;
   margin: auto; }
+
+.display__flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.display__img-full {
+  max-width: 1100px; }
+
+.h3-nomad {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px; }
+
+.fa-nomad-yellow {
+  color: #ffd600; }
+
+#project-description {
+  margin-top: 50px; }
+
+.description-flex-container {
+  display: flex;
+  flex-wrap: nowrap; }
+
+.description-flex-container-box-left {
+  width: 60%;
+  border-left: solid 25px #ffc600; }
+
+.description-flex-container-box-right {
+  width: 40%; }
+
+.description-title-left {
+  padding-bottom: 20px;
+  padding-left: 15px; }
+
+.description-title-right {
+  padding-bottom: 5px;
+  padding-left: 20px; }
+
+.description-text {
+  padding: 0 15px 15px 15px; }
+
+.description-link-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 30px; }
